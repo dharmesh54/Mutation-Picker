@@ -1,7 +1,7 @@
 Mutation Picker Tool
 Introduction:
 
-The Mutation Picker Tool is designed to facilitate identifying and analyzing protein mutations across different generations and conditions. This tool automates the process of comparing protein sequences, generating mutation data, and aiding in the analysis of protein variations.
+The Mutation Picker Tool facilitates identifying and analyzing protein mutations across different generations and conditions. This tool automates the process of comparing protein sequences, generating mutation data, and aiding in the analysis of protein variations.
 
 Usage:
 
@@ -16,12 +16,18 @@ Path: Path of the input file
 Wild ID: This field corresponds to the identification of the wild-type protein.
 
 Generations: Specify the number of protein generations for comparison and analysis.
-Example Scenario:
 
+Dependencies:
+To utilize the Mutation Picker Tool, ensure that the following dependencies are installed:
+
+numpy version 1.23.5 or later
+pandas version 1.5.3 or later
+PyQt5 version 5.15.9 or later
+
+Example Scenario:
 Consider the case of studying the proteome of an E. coli strain ("ecoliT") in various conditions. The goal is to compare this wild-type protein against six treated E. coli strains under different conditions, spanning seven generations. The use of an aligned FASTA file is imperative for this analysis. Aligning protein sequences enables the consolidation of similar proteins from distinct strains, facilitating mutation tracking within specific proteins across organisms under differing conditions.
 
 In this example, the "Wild ID" would be set as "ecoliT," this should be consistently reflected in the protein names provided within the aligned FASTA file.
-
 Output:
 
 Upon input validation, the script imports the task.py module. This module then performs a comprehensive analysis, generating three distinct CSV files. These files contain the following information:
